@@ -123,7 +123,7 @@ class UserServiceTest {
     void updateUser() {
         //given
         User redHat = new User(123L, "Redhat", "USA");
-        userRepository.addUser(redHat);
+        userRepository.save(redHat);
 
         //when
         User updated = new User(123L,"Redhat-v2", "USA");
